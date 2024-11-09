@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LibraryMembershipApplicationForm</title>
+</head>
+<body>
+    <form action="http://127.0.0.1:3000/index.html" method="post">
+    <fieldset>
+    <legend>แบบฟอร์มสมัครสมาชิกห้องสมุด</legend>
+        <label for="ชื่อ">ชื่อจริง:</label>
+        <input type="text" id="=ชื่อ" name="ชื่อ">
+
+        <label for="นามสกุล">นามสกุล:</label>
+        <input type="text" id="=นามสกุล" name="นามสกุล"><br><br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="=name" name="name">
+
+        <label for="surname">Surname:</label>
+        <input type="text" id="=surname" name="surname"><br><br>
+
+        <label for="studentnumber">รหัสนักศึกษา:</label>
+        <input type="text" id="studentnumber" name="studentnumber"><br><br>
+       
+        <label for="gender">เพศ:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">ชาย</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">หญิง</label><br>
+        <input type="radio" id="LGBTQ+" name="gender" value="LGBTQ+">
+        <label for="female">LGBTQ+</label><br><br>
+
+        <label for="birthday">วัน เดือน ปีเกิด</label>
+        <input type="date" id="birthday" name="birthday">
+        
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+
+        <label for="newsletter">ต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมล</label>
+        <input type="checkbox" id="newsletter" name="newsletter" value="yes"><br><br>
+    </fieldset>
+    </form>
+    <input type="submit" value="ยืนยันสมัครสมาชิก">
+</body>
+</html>
