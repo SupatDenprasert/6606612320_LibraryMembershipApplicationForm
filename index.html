@@ -6,24 +6,30 @@
     <title>LibraryMembershipApplicationForm</title>
 </head>
 <body>
-    <form action="http://127.0.0.1:3000/index.html" method="post">
+    <form action="" method="">
     <fieldset>
     <legend>แบบฟอร์มสมัครสมาชิกห้องสมุด</legend>
         <label for="ชื่อ">ชื่อจริง:</label>
-        <input type="text" id="=ชื่อ" name="ชื่อ">
+        <input type="text" id="=ชื่อ" name="ชื่อ" required>
 
         <label for="นามสกุล">นามสกุล:</label>
-        <input type="text" id="=นามสกุล" name="นามสกุล"><br><br>
+        <input type="text" id="=นามสกุล" name="นามสกุล" required><br><br>
 
         <label for="name">Name:</label>
-        <input type="text" id="=name" name="name">
+        <input type="text" id="=name" name="name" required>
 
         <label for="surname">Surname:</label>
-        <input type="text" id="=surname" name="surname"><br><br>
+        <input type="text" id="=surname" name="surname" required><br><br>
 
         <label for="studentnumber">รหัสนักศึกษา:</label>
-        <input type="text" id="studentnumber" name="studentnumber"><br><br>
-       
+        <input type="text" id="studentnumber" name="studentnumber" maxlength="10" required>
+        
+        <label for="birthday">วัน เดือน ปีเกิด</label>
+        <input type="date" id="birthday" name="birthday" required>
+        
+        <label for="Age">อายุ:</label>
+        <input type="number" id="Age" name="Age" maxlength="10" required><br><br>
+
         <label for="gender">เพศ:</label><br>
         <input type="radio" id="male" name="gender" value="male">
         <label for="male">ชาย</label><br>
@@ -31,19 +37,35 @@
         <label for="female">หญิง</label><br>
         <input type="radio" id="LGBTQ+" name="gender" value="LGBTQ+">
         <label for="female">LGBTQ+</label><br><br>
-
-        <label for="birthday">วัน เดือน ปีเกิด</label>
-        <input type="date" id="birthday" name="birthday">
         
-
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        
+        <input type="email" id="email" name="email" required>
+        <label for="telephone">Telephone:</label>
+        <input type="text" id="telephone" name="telephone" required maxlength="10"><br><br>
 
-        <label for="newsletter">ต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมล</label>
+        <label for="username">Username:</label>
+        <input type="text" id="=username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="=password" name="password" required>
+        <label for="password">Confirm password:</label>
+        <input type="password" id="=password" name="password" required><br><br>
+        
+        <p>ประเภทของหนังสือที่สนใจ (เลือกได้มากกว่า 1 ข้อ)<br><br>
+        <input type="checkbox" name="Book" value="ความรู้ทั่วไป"/>เบ็ตเตล็ดหรือความรู้ทั่วไป (Generalities)
+        <input type="checkbox" name="Book" value="ศาสนา"/>ศาสนา (Religion)
+        <input type="checkbox" name="Book" value="สังคมศาสตร์"/>สังคมศาสตร์ (Social sciences)<br><br>
+        <input type="checkbox" name="Book" value="ภาษา"/>ภาษาศาสตร์ (Language)
+        <input type="checkbox" name="Book" value="วิทยาศาสตร์"/>วิทยาศาสตร์ (Science)
+        <input type="checkbox" name="Book" value="วิทยาศาสตร์ประยุกต์"/>วิทยาศาสตร์ประยุกต์ หรือเทคโนโลยี (Technology)<br><br>
+        <input type="checkbox" name="Book" value="การบันเทิง"/>ศิลปกรรมและการบันเทิง (Arts and recreation)
+        <input type="checkbox" name="Book" value="วรรณคดี"/>วรรณคดี (Literature)
+        <input type="checkbox" name="Book" value="ประวัติศาสตร์และภูมิศาสตร์"/>ประวัติศาสตร์และภูมิศาสตร์ (History and geography)<br><br>
+        </p>
+        
+        <label for="newsletter">ต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่ ?</label>
         <input type="checkbox" id="newsletter" name="newsletter" value="yes"><br><br>
     </fieldset>
-    </form>
     <input type="submit" value="ยืนยันสมัครสมาชิก">
+    </form>
 </body>
 </html>
