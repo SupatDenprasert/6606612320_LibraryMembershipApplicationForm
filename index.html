@@ -24,6 +24,37 @@
         <label for="studentnumber">รหัสนักศึกษา:</label>
         <input type="text" id="studentnumber" name="studentnumber" maxlength="10" required>
         
+        <p>คณะ
+        <select name="faculty">
+            <option value="นิติศาสตร์">นิติศาสตร์</option>
+            <option value="คณะพาณิชยศาสตร์และการบัญชี">พาณิชยศาสตร์และการบัญชี</option>
+            <option value="รัฐศาสตร์">รัฐศาสตร์</option>
+            <option value="เศรษฐศาสตร์">เศรษฐศาสตร์</option>
+            <option value="สังคมสงเคราะห์ศาสตร์">สังคมสงเคราะห์ศาสตร์</option>
+            <option value="ศิลปศาสตร์">ศิลปศาสตร์</option>
+            <option value="วารสารศาสตร์และสื่อสารมวลชน">วารสารศาสตร์และสื่อสารมวลชน</option>
+            <option value="สังคมวิทยาและมานุษยวิทยา">สังคมวิทยาและมานุษยวิทยา</option>
+            <option value="วิทยาศาสตร์และเทคโนโลยี">วิทยาศาสตร์และเทคโนโลยี</option>
+            <option value="วิศวกรรมศาสตร์">วิศวกรรมศาสตร์</option>
+            <option value="แพทยศาสตร์">แพทยศาสตร์</option>
+            <option value="สหเวชศาสตร์">สหเวชศาสตร์</option>
+            <option value="ทันตแพทยศาสตร์">ทันตแพทยศาสตร์</option>
+            <option value="พยาบาลศาสตร์">พยาบาลศาสตร์</option>
+            <option value="ศิลปกรรมศาสตร์">ศิลปกรรมศาสตร์</option>
+            <option value="สถาปัตยกรรมศาสตร์และการผังเมือง">สถาปัตยกรรมศาสตร์และการผังเมือง</option>
+            <option value="สาธารณสุขศาสตร์">สาธารณสุขศาสตร์</option>
+            <option value="เภสัชศาสตร์">เภสัชศาสตร์</option>
+            <option value="วิทยาการเรียนรู้และศึกษาศาสตร์">วิทยาการเรียนรู้และศึกษาศาสตร์</option>
+            <option value="สถาบันเทคโนโลยีนานาชาติสิรินธร">สถาบันเทคโนโลยีนานาชาติสิรินธร</option>
+            <option value="วิทยาลัยนวัตกรรม">วิทยาลัยนวัตกรรม</option>
+            <option value="วิทยาลัยสหวิทยาการ">วิทยาลัยสหวิทยาการ</option>
+            <option value="วิทยาลัยนานาชาติปรีดีพนมยงค์">วิทยาลัยนานาชาติปรีดีพนมยงค์</option>
+            <option value="วิทยาลัยโลกคดีศึกษา">วิทยาลัยโลกคดีศึกษา</option>
+            <option value="วิทยาลัยแพทยศาสตร์นานาชาติจุฬาภรณ์">วิทยาลัยแพทยศาสตร์นานาชาติจุฬาภรณ์</option>
+            <option value="วิทยาลัยพัฒนศาสตร์ป๋วยอึ๊งภากรณ์">วิทยาลัยพัฒนศาสตร์ป๋วยอึ๊งภากรณ์</option>
+        </select>
+        </p>
+        
         <label for="birthday">วัน เดือน ปีเกิด</label>
         <input type="date" id="birthday" name="birthday" required>
         
@@ -39,16 +70,16 @@
         <label for="female">LGBTQ+</label><br><br>
         
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" placeholder="                 @dome.tu.ac.th" required>
         <label for="telephone">Telephone:</label>
         <input type="text" id="telephone" name="telephone" required maxlength="10"><br><br>
 
         <label for="username">Username:</label>
         <input type="text" id="=username" name="username" required><br><br>
         <label for="password">Password:</label>
-        <input type="password" id="=password" name="password" required>
-        <label for="password">Confirm password:</label>
-        <input type="password" id="=password" name="password" required><br><br>
+        <input type="password" id="=password" name="password" placeholder="at least 8 letter or number" minlength="8" required>
+        <label for="password">Confirm Password:</label>
+        <input type="password" id="=password" name="password" placeholder="at least 8 letter or number" minlength="8" required><br><br>
         
         <p>ประเภทของหนังสือที่สนใจ (เลือกได้มากกว่า 1 ข้อ)<br><br>
         <input type="checkbox" name="Book" value="ความรู้ทั่วไป"/>เบ็ตเตล็ดหรือความรู้ทั่วไป (Generalities)
@@ -62,6 +93,10 @@
         <input type="checkbox" name="Book" value="ประวัติศาสตร์และภูมิศาสตร์"/>ประวัติศาสตร์และภูมิศาสตร์ (History and geography)<br><br>
         </p>
         
+        <p>โปรดแนบไฟล์หลักฐานแสดงสำเนาบัตรนักศึกษา<br>
+        <input type="file" name="Image" required><br>
+        </p>
+
         <label for="newsletter">ต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่ ?</label>
         <input type="checkbox" id="newsletter" name="newsletter" value="yes"><br><br>
     </fieldset>
