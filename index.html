@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
     <title>LibraryMembershipApplicationForm</title>
 </head>
 <body>
     <form action="" method="">
     <fieldset>
     <legend>แบบฟอร์มสมัครสมาชิกห้องสมุด</legend>
+    <p class="topic">ข้อมูลส่วนตัว</p>
         <label for="ชื่อ">ชื่อจริง:</label>
         <input type="text" id="=ชื่อ" name="ชื่อ" required>
 
@@ -20,9 +22,6 @@
 
         <label for="surname">Surname:</label>
         <input type="text" id="=surname" name="surname" required><br><br>
-
-        <label for="studentnumber">รหัสนักศึกษา:</label>
-        <input type="text" id="studentnumber" name="studentnumber" maxlength="10" required>
         
         <p>คณะ
         <select name="faculty">
@@ -53,6 +52,8 @@
             <option value="วิทยาลัยแพทยศาสตร์นานาชาติจุฬาภรณ์">วิทยาลัยแพทยศาสตร์นานาชาติจุฬาภรณ์</option>
             <option value="วิทยาลัยพัฒนศาสตร์ป๋วยอึ๊งภากรณ์">วิทยาลัยพัฒนศาสตร์ป๋วยอึ๊งภากรณ์</option>
         </select>
+        <label for="studentnumber">รหัสนักศึกษา:</label>
+        <input type="text" id="studentnumber" name="studentnumber" maxlength="10" required>
         </p>
         
         <label for="birthday">วัน เดือน ปีเกิด</label>
@@ -69,8 +70,11 @@
         <input type="radio" id="LGBTQ+" name="gender" value="LGBTQ+">
         <label for="female">LGBTQ+</label><br><br>
         
+        <p class="topic">ข้อมูลการติดต่อ</p>
+        <p>ที่อยู่ปัจจุบัน:</p>
+        <textarea name="address" cols="50" rows="7"></textarea><br><br>
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="                 @dome.tu.ac.th" required>
+        <input type="email" id="email" name="email" placeholder="           @dome.tu.ac.th" required><br><br>
         <label for="telephone">Telephone:</label>
         <input type="text" id="telephone" name="telephone" required maxlength="10"><br><br>
 
@@ -81,6 +85,7 @@
         <label for="password">Confirm Password:</label>
         <input type="password" id="=password" name="password" placeholder="at least 8 letter or number" minlength="8" required><br><br>
         
+        <p class="topic">ข้อมูลพฤติกรรมผู้ใช้งาน</p>
         <p>ประเภทของหนังสือที่สนใจ (เลือกได้มากกว่า 1 ข้อ)<br><br>
         <input type="checkbox" name="Book" value="ความรู้ทั่วไป"/>เบ็ตเตล็ดหรือความรู้ทั่วไป (Generalities)
         <input type="checkbox" name="Book" value="ศาสนา"/>ศาสนา (Religion)
@@ -98,9 +103,9 @@
         </p>
 
         <label for="newsletter">ต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่ ?</label>
-        <input type="checkbox" id="newsletter" name="newsletter" value="yes"><br><br>
-    </fieldset>
-    <input type="submit" value="ยืนยันสมัครสมาชิก">
+        <input type="checkbox" id="newsletter" name="newsletter" value="yes" checked><br><br>
+    </fieldset><br><br>
+    <input class="submit" type="submit" value="ยืนยันสมัครสมาชิก">
     </form>
 </body>
 </html>
